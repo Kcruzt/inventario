@@ -1,0 +1,179 @@
+/* * {
+    border: solid 1px;
+    padding: 0px;
+    margin: 0px;
+} */
+
+header {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#header-nav {
+    display: flex;
+    /* JUSTIFY SIGNIFICA COMO LO VOY A ORDENAR */
+    /* SPACE AROUND ,CREA UN ESPACIO ENTES LOS ELEMEMTOS */
+    justify-content: space-around;
+    /* Alineacion de los elementos */
+    align-items: center;
+    background-color: white;
+    /* Para colocarlo en negria */
+    font-weight: bold;
+    /* alto del contenedor */
+    height: 60px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header-logo {
+    /* Aumentar tamaño de letra */
+    font-size: 25px;
+    display: flex;
+    font-weight: bold;
+}
+
+#hader-logo img {
+    width: 16000px;
+    height: 16000px;
+}
+
+#nav-menu {
+    /* LO COLOCA DE MANERA SEGUIDA(horizantal) */
+    display: flex;
+    justify-content: space-around;
+    /* Que ocupe el 50% del ancho del contenedor */
+    min-width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ELIMIMAR LAS VIÑETAS DE LA LISTA */
+
+#nav-menu li {
+    /* quitar viñeta */
+    list-style: none;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* HOVER ES CUANDO EL MOUSE ESTA sobre DEL CONTENEDOR */
+
+#nav-menu li a:hover {
+    color: blue;
+}
+
+#section-main {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto;
+}
+
+#section-main-login {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows: auto;
+}
+
+#login {
+    border: 1px solid sienna;
+}
+
+.text-error {
+    color: red;
+}
+
+
+/*tabla de trabajadores*/
+
+#table-trabajadores {
+    /*tamaño de letra*/
+    font-size: 13px;
+    margin-bottom: 10px rgb(144, 144, 145);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+#table-trabajadores,
+#table-trabajadores td,
+#table-trabajadores th {
+    border: 1px solid rgb(144, 144, 145);
+    color: rgb(0, 0, 0);
+}
+
+#table-trabajadores th,
+#table-trabajadores td {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.table-collapse {
+    /*desaparece borde*/
+    border-collapse: collapse;
+}
+
+input {
+    margin-bottom: 9px;
+}
+
+
+/*botton
+ */
+
+.a-button {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.a-button-new {
+    padding: 4px 13px;
+    color: #3a6a30;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.a-button-new:hover {
+    color: beige;
+    border: 1px solid black;
+    background-color: rgba(27, 7, 7, 0.84);
+    top: 5px;
+}
+
+.a-button-edit {
+    padding: 4px 13px;
+    color: #6a3e30;
+    border: 1px solid rgb(209, 208, 208);
+    background-color: beige;
+}
+
+.a-button-edit:hover {
+    color: beige;
+    border: 1px solid black;
+    background-color: #6a3e30;
+}
+
+.a-button-delete {
+    padding: 4px 13px;
+    color: #3a6a30;
+    border: 1px solid black;
+}
+
+.a-button-delete:hover {
+    color: beige;
+    border: 1px solid black;
+    background-color: red;
+}
